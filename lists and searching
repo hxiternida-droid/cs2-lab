@@ -1,0 +1,25 @@
+E1:
+snacks = []
+for i in range (5):
+  snack = input('snack: ')
+  snacks.append(snack)
+print(snacks)
+
+E2:
+num = int(input('how many names? '))
+list = []
+for i in range (num):
+  name = input('name: ')
+  list.append(name)
+print (list)  
+print(f'{num} names stored.')
+
+E3:
+list = []
+for i in range (5):
+  score = int(input('score: '))
+  list.append(score)
+print(list)
+
+A1:
+
