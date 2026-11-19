@@ -1,11 +1,11 @@
-E1:
+#E1:
 snacks = []
 for i in range (5):
   snack = input('snack: ')
   snacks.append(snack)
 print(snacks)
 
-E2:
+#E2:
 num = int(input('how many names? '))
 list = []
 for i in range (num):
@@ -14,12 +14,93 @@ for i in range (num):
 print (list)  
 print(f'{num} names stored.')
 
-E3:
+#E3:
 list = []
 for i in range (5):
   score = int(input('score: '))
   list.append(score)
 print(list)
 
-A1:
+#E4:
+names = []
+while True:
+  name = input('Name (done to stop): ')
+  if name == 'done':
+    break
+  names.append(name)
+print(names)
+print(f'{len(names)} names stored.')
 
+#E5:
+fruits = []
+for i in range (4):
+  fruit = input('Fruit: ')
+  fruits.append(fruit)
+print (f'First: {fruits[0]}')
+print (f'Last: {fruits[-1]}')
+
+#A1:
+items = []
+for i in range (4):
+  item = input('Item: ')
+  items.append(item)
+for i in range (4):
+  print(i + 1, items[i])
+
+#A2:
+scores = []
+for i in range (5):
+  score = int(input('Score: '))
+  scores.append(score)
+total = 0
+for score in scores:
+  total = total + score
+print (f'Total: {total}')
+print(f'Average: {total / 5}')
+
+#A3:
+passed = 0
+for i in range (5):
+  score = int(input('Score: '))
+  if score >= 75:
+    passed = passed + 1
+print(f'{passed} of 5 passed.')
+
+#A4:
+highest = 0
+for i in range(5):
+  score = int(input('Score: '))
+  if score > highest:
+    highest = score
+print (f'Highest: {highest}')
+
+#A5:
+names = []
+for i in range(5):
+  names.append(input('Name: '))
+target = input('Look for: ')
+found = False
+for name in names:
+  if name == target:
+    found = True
+    break
+if found:
+  print(f'{target} is in the list.')
+else:
+  print(f'{target} is not in the list.')
+
+#H3:
+def count (items, target):
+  total = 0
+  for item in items:
+    if item == target:
+      total += 1
+  return total
+votes = []
+while True:
+  vote = input('Vote ( done to stop): ')
+  if vote == 'done':
+    break
+  votes.append(vote)
+candidate = input('Candidate: ')
+print(f'{candidate} got {count(votes, candidate)} vote(s).')
